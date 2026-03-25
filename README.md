@@ -1,20 +1,22 @@
 <div align="center">
 
-<img src="assets/khanda-hero.png" width="100%" alt="khanda hero banner" />
+<img src="assets/khanda-hero.png" alt="खंड — khanda by Darshankumar Joshi" width="100%" />
 
-# खंड
-## khanda
+# 🌊 खंड
+## `khanda`
 
 > *Khandakavya / Atharvaveda*
 
-**Sacred Division — sections of the Vedas**
+### Sacred Division — sections of the Vedas
 
-_Text chunking strategies for LLM agents. Sentence, paragraph, semantic, recursive chunking._
+**Text chunking strategies for LLM agents. Sentence, paragraph, semantic, recursive chunking.**
 
-[![Python](https://img.shields.io/badge/Python-3.9+-1D4ED8.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-1D4ED8.svg?style=flat-square)](LICENSE)
-[![Part of Arsenal](https://img.shields.io/badge/Part%20of-Vedic%20Arsenal-1D4ED8.svg?style=flat-square)](https://github.com/darshjme/arsenal)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-1D4ED8.svg?style=flat-square)](pyproject.toml)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://python.org)
+[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen?style=flat-square)](https://github.com/darshjme/khanda)
+[![Vedic Arsenal](https://img.shields.io/badge/Vedic%20Arsenal-100%20libs-blue?style=flat-square)](https://github.com/darshjme/arsenal)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+
+*Formerly `agent-chunk` — Part of the [**Vedic Arsenal**](https://github.com/darshjme/arsenal): 100 production-grade Python libraries for LLM agents, each named from the Vedas, Puranas, and Mahakavyas.*
 
 </div>
 
@@ -22,96 +24,80 @@ _Text chunking strategies for LLM agents. Sentence, paragraph, semantic, recursi
 
 ## The Vedic Principle
 
-खंड — Sacred Division — is the editorial wisdom of the Vedas themselves. The great sage Vyasa divided the infinite Veda into four Samhitas so that human minds could comprehend the incomprehensible. Every Khanda of scripture is precisely sized for understanding — not too long, not too short, but exactly right for the vessel that receives it.
+The ancient *Khanda* principle from Khandakavya / Atharvaveda finds its modern expression in this library.
 
-Context windows are the khanda of LLM architecture. A document of 100,000 tokens cannot enter a model that accepts 8,000. khanda brings Vyasa's editorial wisdom to your text processing: sentence boundaries, paragraph breaks, semantic coherence, recursive hierarchical chunking. The correct chunk size is not arbitrary — it is determined by the nature of both the text and the receiver.
+Just as the Vedic sages understood that every phenomenon in the universe follows deep patterns — patterns of creation, maintenance, and dissolution — `khanda` applies this wisdom to LLM agent engineering.
 
-Divide intelligently to conquer completely. khanda implements every chunking strategy from simple fixed-size to sophisticated semantic boundary detection.
+The concept of *खंड* (Sacred Division — sections of the Vedas) speaks directly to the technical problem this library solves. When the sages codified this principle in Khandakavya / Atharvaveda, they were describing not just a spiritual truth but a computational truth that would take humanity millennia to rediscover in silicon.
+
+This is not coincidence. The universe has one nature. The Vedas described it first.
 
 ---
 
 ## How It Works
 
 ```mermaid
-flowchart TD
-    A[Input] --> B[Process]
-    B --> C{Valid?}
-    C -->|Yes| D[✅ Output]
-    C -->|No| E[🔄 Handle]
+flowchart LR
+    A[Input] --> B[khanda]
+    B --> C{Process}
+    C -- Success --> D[Output]
+    C -- Error --> E[Handle]
     E --> B
+    style B fill:#6b21a8,color:#fff
 ```
-
----
-
-## Quick Start
-
-```bash
-pip install khanda
-```
-
-```python
-from khanda import *
-
-# Initialize
-agent = Khanda()
-
-# Use
-result = agent.process(your_input)
-print(result)
-```
-
----
-
-## Features
-
-- ⚡ **Zero dependencies** — pure Python, no bloat
-- 🛡️ **Production-grade** — battle-tested patterns
-- 🔧 **Configurable** — sane defaults, full control
-- 📊 **Observable** — built-in metrics and logging
-- 🔄 **Async-ready** — full asyncio support
-- 🧪 **Tested** — comprehensive test coverage
 
 ---
 
 ## Installation
 
 ```bash
-# pip
 pip install khanda
+```
 
-# From source
-git clone https://github.com/darshjme/khanda
-cd khanda
-pip install -e .
+Or from source:
+```bash
+git clone https://github.com/darshjme/khanda.git
+cd khanda && pip install -e .
+```
+
+## Quick Start
+
+```python
+from khanda import *
+
+# See examples/ for full usage
 ```
 
 ---
 
-## Part of the Vedic Arsenal
+## The Vedic Arsenal
 
-`khanda` is part of the **[Vedic Arsenal](https://github.com/darshjme/arsenal)** — 100 production-grade Python libraries for LLM agents, named after Sanskrit concepts from the Upanishads, Mahabharata, Ramayana, and Vedic philosophy.
+`khanda` is one of 100 libraries in **[darshjme/arsenal](https://github.com/darshjme/arsenal)** — each named from sacred Indian literature:
 
-Each library is:
-- ✅ Zero-dependency
-- ✅ Production-ready
-- ✅ Individually installable
-- ✅ Part of a coherent ecosystem
+| Sanskrit Name | Source | Technical Function |
+|---|---|---|
+| `khanda` | Khandakavya / Atharvaveda | Sacred Division — sections of the Vedas |
+
+Each library solves one problem. Zero external dependencies. Pure Python 3.8+.
 
 ---
 
-## Built by [Darshankumar Joshi](https://github.com/darshjme)
+## Contributing
 
-> *"Building the dharmic infrastructure for the AI age"*
-
-[![GitHub](https://img.shields.io/badge/GitHub-darshjme-1D4ED8.svg?style=flat-square&logo=github)](https://github.com/darshjme)
-[![Arsenal](https://img.shields.io/badge/Vedic%20Arsenal-100%20Libraries-1D4ED8.svg?style=flat-square)](https://github.com/darshjme/arsenal)
+1. Fork the repo
+2. Create feature branch (`git checkout -b fix/your-fix`)  
+3. Add tests — zero dependencies only
+4. Open a PR
 
 ---
 
 <div align="center">
 
-*खंड — Sacred Division — sections of the Vedas*
+**🌊 Built by [Darshankumar Joshi](https://github.com/darshjme)** · [@thedarshanjoshi](https://twitter.com/thedarshanjoshi)
 
-*From the Khandakavya / Atharvaveda*
+*"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन"*
+*Your right is to action alone, never to its fruits. — Bhagavad Gita 2.47*
+
+[Vedic Arsenal](https://github.com/darshjme/arsenal) · [GitHub](https://github.com/darshjme) · [Twitter](https://twitter.com/thedarshanjoshi)
 
 </div>
